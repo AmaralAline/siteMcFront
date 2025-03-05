@@ -1,0 +1,212 @@
+
+/*desktop*/
+
+body {
+    align-items: center;
+    font-size: inherit;
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    height: 90vh;
+    margin-bottom:10px;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.containerC {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    box-shadow: 0 12px 16px rgb(10, 10, 10);
+    overflow-x: hidden;
+    background: linear-gradient( #954ebf, #2e2c2c);
+    
+}
+
+h1, h2, h3 {
+    margin: 15px 0;
+    text-align: center;
+    color: #fff;
+}
+
+hr {
+    background-color: #fff;
+    height: 2px;
+}
+
+button {
+    background: radial-gradient(#954ebf, #2e2c2c);
+    color: #fff;
+    cursor: pointer;
+    border: #fff 1px  solid;
+    transition: background-color 0.4s ease,color 0.3s ease;
+    min-height: 46px;
+    min-width: 200px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 18px;
+    flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
+}
+    button:hover {
+        background-color: #255cb4;
+        color: #51b8d9;
+    }
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1px 0;
+    font-size:12px;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+form {
+    margin: 5px 0
+}
+a {
+    color: #6ad728;
+}
+
+p {
+    margin: 0px 0;
+    text-align: center;
+    color: #fff;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+select {
+    border-radius: 3px;
+    padding: 10px;
+    border:  1px solid;
+    box-sizing: border-box;
+    margin: 3px 0;
+    display: block;
+    min-width: 200px;
+    flex: 1 1 45%; /* Ocupa 45% da largura da tela */
+    flex-wrap: wrap; /* Permite que os elementos se ajustem em várias linhas */
+}
+/*mobile*/
+@media only screen and (min-width:768px) {
+    .box {
+        width: 720px;
+        overflow-y: scroll;
+        
+    }
+
+    .row {
+        margin: 18px 0;
+        display: flex;
+    }
+
+    .left {
+        margin-right: 40px;
+    }
+
+    .input-field {
+        width: 40px;
+    }
+    input[type=text],
+    input[type=password],
+    input[type=number],
+    input[type=email],
+    select {
+        cursor:pointer;
+        border-radius: 1px;
+        padding: 5px;
+        border: 1px solid;
+        box-sizing: border-box;
+        margin: 1px 1px;
+        display: flex;
+        min-width: 35vh;
+        flex: 1 1 45%; /* Ocupa 45% da largura da tela */
+        flex-wrap: wrap; /* Permite que os elementos se ajustem em várias linhas */
+    }
+
+    body {
+        margin: 0px;
+        align-items: center;
+        font-size: inherit;
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+        height: 90vh;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: white;
+        
+    }
+
+    .containerC {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1px;
+        border-radius: 30px;
+        box-shadow: 0 12px 16px rgb(10, 10, 10);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        margin-bottom:10px;
+        background: linear-gradient( #954ebf, #2e2c2c);
+    }
+
+   
+
+    h1, h2, h3 {
+        margin: 15px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    hr {
+        background-color: #fff;
+        height: 2px;
+    }
+
+    button {
+        background-color: #51b8d9;
+        color: #fff;
+        cursor: pointer;
+        border: #fff 1px solid;
+        min-height: 46px;
+        min-width: 200px;
+        flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
+        border-radius: 3px;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    }
+        button:hover {
+            background-color: #255cb4;
+            color: #51b8d9;
+        }
+
+    a {
+        color: #6ad728;
+    }
+
+}
+.erro { /*toda vez que houver erro ao digitar nas caixas esse � o estilo*/
+
+    color: #fff;
+    background: #de2a2a;
+    padding: 0px;
+    margin: 0px 0;
+    border-radius: 3px;
+    display: none; /*significa que o elemente html existe, mas est� invisivel*/
+    text-align: center;
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Neuropol', sans-serif;
+}
+h1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: transparent;
+    background: radial-gradient(circle at center, #954ebf, #2e2c2c); /* Gradiente aplicado às letras */
+    -webkit-background-clip: text; /* Necessário para o efeito funcionar no texto no Chrome, Safari */
+    background-clip: text; /* Para garantir compatibilidade futura */
+    -webkit-text-fill-color: transparent; /* Necessário para Chrome, Safari, etc. */
+    color: transparent; /* Garantia de que o texto seja transparente para exibir o gradiente */
+}
+
+.fade-zoom {
+
+    font-size: 2em;
+    color: #333;
+    opacity: 0;
+    transform: scale(1);
+    animation: fade-zoom 4s forwards;
+
+}
+
+.fade-zoom2 {
+
+    font-size: 2em;
+    color: #333;
+    opacity: 0;
+    transform: scale(1.2);
+    animation: fade-zoom 11s forwards;
+}
+
+@keyframes fade-zoom {
+
+    to {
+
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: transparent;
+    }
+
+    .fade-zoom {
+
+        font-size: 2em;
+        color: #333;
+        opacity: 0;
+        transform: scale(1);
+        animation: fade-zoom 4s forwards;
+    }
+
+    .fade-zoom2 {
+
+        font-size: 2em;
+        color: #333;
+        opacity: 0;
+        transform: scale(1.2);
+        animation: fade-zoom 11s forwards;
+    }
+
+    @keyframes fade-zoom {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+
+    .erro { /*toda vez que houver erro ao digitar nas caixas esse é o estilo*/
+        color: #fff;
+        background: #de2a2a;
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 3px;
+        display: none; /*significa que o elemente html existe, mas está invisivel*/
+        text-align: center;
+    }
+}

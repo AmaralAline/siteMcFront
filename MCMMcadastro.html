@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>MEU CORPO MINHAS METAS</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="MeuCorpoMinhasMetas_logo.png">
+    <link rel="stylesheet" href="MCMMstyleprincipal.css">
+    <link rel="stylesheet" href="MCMMstylecadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!--link acima hospedado na internet que com o css inserimos icones e fontes populares com carregamentos mais rapidos-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
+
+    
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="logomenu.png" class="logo-img">
+            Meu Corpo Minhas Metas
+        </div>
+
+        <ul class="nav-links-desktop">
+            <li><a href="MCMMpaginainicial.html">Inicio</a></li>
+            <li><a href="MCMMsobre.html">Sobre</a></li>
+            <li><a href="MCMMcadastro.html">Cadastro</a></li>
+            <li><a href="MCMMlogin.html">Login</a></li>
+
+        </ul>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <!--aqui a configuração para quanod estiver em mobile-->
+            <button class="close" id="closeButton">
+                <!--Botão para fechar o menu-->
+                <i class="fas fa-times"></i> <!-- icone para  ser o X-->
+            </button>
+            <ul class="nav-links-mobile">
+                <li><a href="MCMMpaginainicial.html">Inicio</a></li>
+                <li><a href="#MCMMsobre.html">Sobre</a></li>
+                <li><a href="#MCMMcadastro.html">Cadastro</a></li>
+                <li><a href="#MCMMlogin.html">Login</a></li>
+
+            </ul>
+        </div>
+
+        <button class="hamburger" id="hamburgerButton">
+            <!--botão de hambuger para exibir quando estiver na resuloção mobile-->
+            <i class="fas fa-bars"></i>
+        </button>
+        <!--INICIO DO CADASTRO-->
+    </nav>
+
+    <header>
+        <div>
+
+            <div class="containerC">
+
+                <div class="boxC">
+
+                    <h1>Cadastre-se</h1>
+
+                    <form class="formC" id="formCadastro">
+
+                        <div class="row">
+
+                            <div class="left">
+
+                                <label for="nome">Nome</label>
+                                <input type="text" class="input-field" id="nome" />
+
+                            </div>
+                            <div>
+
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" class="input-field" id="sobrenome" />
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="left">
+
+                                <label for="email">Email</label>
+                                <input type="email" class="input-field" id="email" />
+
+                            </div>
+                            <div>
+                                <label for=" telefone">Telefone</label>
+                                <input type="number" class="input-field" id="telefone" />
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="left">
+                                    <label for="genero">Gênero</label>
+
+                                    <select class="input-field" id="genero">
+                                        <option>Homem Cis</option>
+                                        <option>Mulher Cis</option>
+                                        <option>Não binário</option>
+                                        <option>Homem Transgenero</option>
+                                        <option>Mulher Transgenero</option>
+                                    </select>
+
+                                </div>
+                                <div>
+                                    <label for="ondeConheceu">Viu esse site..</label>
+
+                                    <select class="input-field" id="ondeConheceu">
+                                        <option>Instagram</option>
+                                        <option>Google</option>
+                                        <option>Programa de Emagrecimento</option>
+                                        <option>Indicação de um Amigo(a)</option>
+                                        <option>TikTok</option>
+                                        <option>Indicação de um Profissional</option>
+                                        <option>Outro Site</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="left">
+
+                                    <label for="senha">Crie uma Senha</label>
+                                    <input type="password" id="senha" />
+
+                                </div>
+                                <div class="row">
+                                    <button class="Cadastro" id="cadastro">Cadastrar</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p> Já possui conta? <a href="MCMMlogin.html"> Faça Login </a></p>
+                                <p> Dúvidas sobre se cadastrar? <a href="MCMMsobre.html">Leia mais</a></p>
+                            </div>
+
+                        </div>
+                        <span id="spnErro" class="erro"></span>
+
+                    </form>
+                    <span id="spnErro" class="erro"></span>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="MCMMcadastro.js"></script>
+
+</body>
+</html>
+
+

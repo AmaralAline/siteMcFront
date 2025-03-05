@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'roboto'sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 auto;
+    overflow: hidden; /*esconde o texto que não cabe*/
+    border-right: 0.15em solid #333; /*curso de digitação*/
+    white-space: nowrap; /*impede quebra de linha*/
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40,end), blink-caret .75s step-end infinite;
+    text-align:center;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.3),
+    3px 3px 6px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
+    position:initial;
+    display: inline-block;
+}
+.nav {
+    text-align: center
+}
+
+@keyframes typing
+{
+    from {
+        width: 0
+    }
+
+    to
+    {
+        width: 100%;
+    }
+}
+@keyframes blink-caret
+{
+    from,to
+    {
+        border-color:transparent;
+    }
+    50%
+    {
+        border-color:transparent;
+    }
+
+}
+
+
+h1.typing-finished {
+    border-right: none;
+    animation: none; /*remove o efeito do cursor piscante*/
+}
+
+
+
+.erro { /*toda vez que houver erro ao digitar nas caixas esse é o estilo*/
+    color: #fff;
+    background: #de2a2a;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 3px;
+    display: none; /*significa que o elemente html existe, mas está invisivel*/
+    text-align: center;
+}
+@media only screen and (min-width:768px){
+
+    h1 {
+        font-size: 50px;
+        margin: 0 auto;
+        overflow: hidden; /*esconde o texto que não cabe*/
+        border-right: 0.15em solid #333; /*curso de digitação*/
+        white-space: nowrap; /*impede quebra de linha*/
+        letter-spacing: 0.15em;
+        animation: typing 3.5s steps(40,end), blink-caret .75s step-end infinite;
+        text-align: center;
+        color: #ff0000;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.3), 3px 3px 6px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1);
+        position: initial;
+        display: flex;
+    }
+
+
+
+}

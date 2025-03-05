@@ -1,0 +1,175 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body,
+html {
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    overflow: hidden;
+    font-family: 'Neuropol', sans-serif; /* Aplica a fonte personalizada */
+}
+
+@font-face {
+    font-family: 'Neuropol';
+    src: url('fonts/Neuropol.otf') format('opentype'); /* Apontar para o arquivo na pasta */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url("mulhernochao.png");
+    background-position: center;
+    background-size: cover; /* Faz com que a imagem cubra toda a área do contêiner */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+.navBarCadastrado {
+    /* Barra de menu com gradiente animado */ background: linear-gradient(90deg, #954ebf, #2e2c2c, #0e469f);
+    animation: gradientAnimation 5s infinite alternate; /* Anima��o cont�nua */
+    color: #255cb4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 5vw;
+    background-size: 200% 100%; /* Faz o gradiente se mover ao longo do eixo horizontal */
+
+    @keyframes gradientAnimation {
+
+        0% {
+            background-position: 0% 50%; /* Gradiente come�a do lado esquerdo */
+            background-color: #954ebf; /* Cor inicial */
+        }
+
+        50% {
+            background-position: 100% 50%; /* Gradiente se move para a direita */
+            background-color: #0e469f; /* Mudan�a de cor no meio da anima��o */
+        }
+
+        100% {
+            background-position: 0% 50%; /* Gradiente retorna para a esquerda */
+            background-color: #2e2c2c; /* Cor final */
+        }
+    }
+}
+.Logo {
+    font-size: 30px;
+    color: rgb(176, 171, 171,0.9);
+    -webkit-text-stroke: 1px rgb(114, 44, 134,0.9);
+    font-family: 'Neuropol', sans-serif;
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+.Logo-img {
+    margin-right: 0; /* Espa�o entre a imagem e o texto */
+    width: 50%; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mant�m a propor��o da imagem */
+    max-width: 3rem; /* A imagem n�o exceder� o tamanho do cont�iner */
+    height: auto; /* Mant�m a propor��o da imagem */
+    margin-left: -10px;
+    display: flex;
+    background-size: cover;
+}
+.Nav-links-Desktop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 12px; /*tamanho letra menu*/
+}
+.Nav-links-Desktop li {
+    padding: 0 15px;
+}
+.Nav-links-Desktop a,
+.Nav-links-Mobile a {
+    color: #fff; /*cor ddas letras inicio*/
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .Nav-links-Desktop a:hover {
+        color: #954ebf;
+    }
+.Mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: radial-gradient( rgb(176, 171, 171,0.9),rgb(114, 44, 134,0.9));
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    z-index: 5;
+}
+.Nav-links-Mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 80%;
+    list-style: none;
+    padding: 0;
+}
+
+    .Nav-links-Mobile li {
+        border-bottom: 1px solid #787272;
+        padding-bottom: 1.2rem;
+    }
+
+.Hamburger,
+.Close {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.Close {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: block;
+    align-self: end;
+}
+
+.Container {
+   
+    display: flex; /* Flexbox ativa a disposição horizontal */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* 100% da altura da tela */
+}
+.Coluna {
+    margin-top:0;
+    margin-bottom:100px;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(69, 66, 66,0.25);
+    text-align: center;
+    line-height: 100px; /* Centraliza o texto verticalmente */
+    font-size: 16px;
+    border-radius:30px;
+    box-shadow:0 8px 12px rgb(0,0,0);
+}
+.A {
+  
+    color:black;
+}
+.B {
+    color: red;
+    
+}
+.C {
+    color: red;
+}
+
