@@ -74,4 +74,17 @@ window.onload = function (e) {
 
         xhr.send(data);
     }
+    closeButton.onclick = function (e) {
+        if (mobileMenu.classname == "hamburgerButton") {
+            mobileMenu.classname += "open";
+        }
+        else {
+            mobileMenu.className == "hamburgerButton";
+        }
+
+
+    }
+
 };
+
+

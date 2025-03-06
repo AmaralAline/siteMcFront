@@ -1,5 +1,4 @@
-<!DOCTYPE
- 
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 
@@ -8,14 +7,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="MeuCorpoMinhasMetas_logo.png">
-    <link rel="stylesheet" href="MeuCorpoMinhasMetas.css">
     <link rel="stylesheet" href="MCMMstyleprincipal.css">
+    <link rel="stylesheet" href="MCMMstylelogin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <!--link acima hospedado na internet que com o css inserimos icones e fontes populares com carregamentos mais rapidos-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Pacifico&display=swap" rel="stylesheet">
 
-    <script src="MCMMpaginainicial.js" defer></script>
-
+    <script src="paginainicial.js" defer></script>
 </head>
 
 <body>
@@ -24,32 +22,28 @@
 
         <div class="logo">
             <img src="logomenu.png" class="logo-img">
-             Meu Corpo Minhas Metas
+            Meu Corpo Minhas Metas
         </div>
 
         <ul class="nav-links-desktop">
-
-            <li><a href="MCMMpaginainicial.html">Inicio</a></li>
-            <li><a href="MCMMsobre.html">Sobre</a></li>
-            <li><a href="MCMMcadastro.html">Cadastro</a></li>
-            <li><a href="MCMMlogin.html">Login</a></li>
+            <li><a href="paginainicial.html">Inicio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
 
         </ul>
 
         <div class="mobile-menu" id="mobileMenu">
             <!--aqui a configuração para quanod estiver em mobile-->
-
             <button class="close" id="closeButton">
                 <!--Botão para fechar o menu-->
                 <i class="fas fa-times"></i> <!-- icone para  ser o X-->
             </button>
-
             <ul class="nav-links-mobile">
-
-                <li><a href="MCMMpaginainicial.html">Inicio</a></li>
-                <li><a href="MCMMsobre.html">Sobre</a></li>
-                <li><a href="MCMMcadastro.html">Cadastro</a></li>
-                <li><a href="MCMMlogin.html">Login</a></li>
+                <li><a href="paginainicial.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
 
             </ul>
         </div>
@@ -58,16 +52,33 @@
             <!--botão de hambuger para exibir quando estiver na resuloção mobile-->
             <i class="fas fa-bars"></i>
         </button>
-
     </nav>
+    <!--Inicio Login-->
 
-        <div class="container">
-            <h1 class="fade-zoom">Você quer mudar seu estilo de vida?</h1>
-            <button class="fade-zoom2" id="EuQuero">Eu quero</button>
+    <div class="ContainerL">
+        <div class="boxL">
+            <h1>Login</h1>
+            <form class="form">
+                <label for=" Email" id="Email">Email</label>
+                <input type="email" id="email" />
+
+                <label for="Senha" id="Senha">Senha</label>
+                <input type="password" id="senha" />
+
+                <p class="esqueceuSenha">Esqueceu Senha<a class="esqueciSenha" href=" esqueceuSenha.html">Clique aqui</a></p>
+
+                <button class="LoginEntrar" id="LoginEntrar"> Entrar </button>
+
+                <p> Não possuí conta? <a href="cadastro.html">Cadastre-se </a></p>
+
+
+            </form>
+            <span id="spnErro" class="erro"></span>     <!--LEmbrar de colocar para o vermelhor aparecer-->
         </div>
 
-   
-    
+    </div>
+    <script src="login.js" defer></script>
+    <script src="paginainicial.js" defer></script>
 
 </body>
 </html>
