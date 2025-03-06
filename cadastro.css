@@ -1,23 +1,12 @@
 
 /*desktop*/
 
-body {
-    align-items: center;
-    font-size: inherit;
-    margin: 0;
-    margin-top: 0px;
-    padding: 0;
-    height: 90vh;
-    margin-bottom:10px;
-    font-size: 18px;
-    color: white;
-    
-}
+
 
 .containerC {
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 1px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,6 +78,7 @@ input[type=password],
 input[type=number],
 input[type=email],
 select {
+    
     border-radius: 3px;
     padding: 10px;
     border:  1px solid;
@@ -102,7 +92,7 @@ select {
 /*mobile*/
 @media only screen and (min-width:768px) {
     .box {
-        width: 720px;
+        width: 768px;
         overflow-y: scroll;
         
     }
@@ -125,6 +115,7 @@ select {
     input[type=email],
     select {
         cursor:pointer;
+        align-items:center;
         border-radius: 1px;
         padding: 5px;
         border: 1px solid;
@@ -136,19 +127,7 @@ select {
         flex-wrap: wrap; /* Permite que os elementos se ajustem em várias linhas */
     }
 
-    body {
-        margin: 0px;
-        align-items: center;
-        font-size: inherit;
-        margin: 0;
-        margin-top: 0px;
-        padding: 0;
-        height: 90vh;
-        margin-bottom: 10px;
-        font-size: 18px;
-        color: white;
-        
-    }
+   
 
     .containerC {
         margin-left: 25%;

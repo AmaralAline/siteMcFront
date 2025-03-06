@@ -13,7 +13,6 @@ html {
     margin-bottom: 10vh;
     box-sizing: border-box;
     background-color: #000000;
-    overflow: hidden;
     font-family: 'Neuropol', sans-serif; /* Aplica a fonte personalizada */
 }
 
@@ -23,7 +22,6 @@ html {
         font-weight: normal;
         font-style: normal;
     }
-
 
 body {
     background-image: url("mulhernochao.png");
@@ -287,16 +285,15 @@ body {
 
     .mobile-menu { /*menu hambuger*/
         
-        top: 200px;
-        display:flex;
+        top: 110px;
         right: 40px;
         width: 30%;
-        height: 80%;
+        height: 70%;
         background: radial-gradient( rgb(176, 171, 171,0.9),rgb(114, 44, 134,0.9));
         flex-direction: column;
         align-items: center;
-        font-size: 1.8rem;
-        z-index: 5;
+        font-size: 1.2rem;
+        z-index: 4;
       
     }
 

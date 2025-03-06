@@ -4,6 +4,9 @@
     border: 0;
     font-family: 'Neuropol', sans-serif;
 }
+html {
+    overflow: auto;
+}
 h1 {
 
     display: flex;

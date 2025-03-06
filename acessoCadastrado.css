@@ -15,6 +15,9 @@ html {
     overflow: hidden;
     font-family: 'Neuropol', sans-serif; /* Aplica a fonte personalizada */
 }
+html {
+    overflow: auto;
+}
 
 @font-face {
     font-family: 'Neuropol';

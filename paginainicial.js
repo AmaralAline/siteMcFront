@@ -15,7 +15,6 @@ closeButton.onclick = function (e) {
     else {
         mobileMenu.className == "hamburgerButton";
     }
-    
 
 }
 
