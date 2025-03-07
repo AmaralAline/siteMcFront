@@ -4,33 +4,36 @@
     border:0;
 }
 
-body,
+
 html {
-    margin: 0;
-    margin-top: 0px;
-    margin-left: 30px;
-    margin-right: 30px;
+  
     margin-bottom: 10vh;
     box-sizing: border-box;
     background-color: #000000;
-    font-family: 'Neuropol', sans-serif; /* Aplica a fonte personalizada */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif /* Aplica a fonte personalizada */
+}
+@font-face {
+    font-family: 'Neuropol';
+    src: url('fonts/Neuropol.otf') format('opentype'); /* Apontar para o arquivo na pasta */
+    font-weight: normal;
+    font-style: normal;
 }
 
-    @font-face {
-        font-family: 'Neuropol';
-        src: url('fonts/Neuropol.otf') format('opentype'); /* Apontar para o arquivo na pasta */
-        font-weight: normal;
-        font-style: normal;
-    }
-
 body {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 95vh;
     background-image: url("mulhernochao.png");
     background-position: center;
     background-size: cover; /* Faz com que a imagem cubra toda a área do contêiner */
     background-repeat: no-repeat; /* Impede a repetição da imagem */
-    
 }
-   
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1px 0;
+    font-size: 18px;
+}
 
 .navbar {
 
@@ -198,10 +201,30 @@ body {
         color: #4d8de5;
 
     }
-@media (max-width: 768px) {
 
-    body,
-    html {
+.containerQuero {
+ color:rgb(114, 44, 134,0.9);
+ border-top-color:#fff;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.fade-zoom2 {
+    border: 1px solid;
+    background: linear-gradient( #954ebf, #2e2c2c);
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    transition: 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px;
+    margin-left:45%;
+}
+@media (max-width: 768px) {
+    body, html {
         margin: 0;
         margin-top: 30px;
         margin-left: 20px;
@@ -210,7 +233,7 @@ body {
         font-family: Neuropol;
         box-sizing: border-box;
         background-color: #000000;
-        overflow: hidden;
+        overflow: auto;
     }
     
     body {
@@ -219,6 +242,35 @@ body {
         background-size: contain; /* Ajusta a imagem para caber dentro da tela mantendo a propor��o */
         background-repeat: no-repeat; /* Impede a repeti��o da imagem */
         background-attachment: fixed; /* Faz com que a imagem de fundo n�o se mova com o conte�do */
+    }
+    .mobile-menu { /*menu hambuger*/
+
+        top: 110px;
+        right: 40px;
+        width: 30%;
+        height: 70%;
+        background: radial-gradient( rgb(176, 171, 171,0.9),rgb(114, 44, 134,0.9));
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        z-index: 4;
+    }
+
+    .logo {
+        font-size: 100%;
+        color: #fff;
+        -webkit-text-stroke: 1px rgb(114, 44, 134,0.9);
+        font-family: 'Neuropol', sans-serif; /* Aplica a fonte personalizada */
+        display: flex;
+        align-items: center;
+        white-space: nowrap
+    }
+
+    .logo-img {
+        margin-right: 10px; /* Espa�o entre a imagem e o texto */
+        width: 100%; /* Ajuste o tamanho da imagem */
+        height: 100%; /* Mant�m a propor��o da imagem */
+        max-width: 10%; /* A imagem n�o exceder� o tamanho do cont�iner */
     }
 
     .nav-links-desktop {
@@ -283,39 +335,7 @@ body {
             color: #51b8d9;
         }
 
-    .mobile-menu { /*menu hambuger*/
-        
-        top: 110px;
-        right: 40px;
-        width: 30%;
-        height: 70%;
-        background: radial-gradient( rgb(176, 171, 171,0.9),rgb(114, 44, 134,0.9));
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.2rem;
-        z-index: 4;
-      
-    }
-
-    .logo {
-
-        font-size: 100%;
-        color: #fff;
-        -webkit-text-stroke: 1px rgb(114, 44, 134,0.9);
-        font-family: 'Neuropol', sans-serif; /* Aplica a fonte personalizada */
-        display: flex;
-        align-items: center;
-        white-space: nowrap
-    }
-
-    .logo-img {
-
-        margin-right: 10px; /* Espa�o entre a imagem e o texto */
-        width: 100%; /* Ajuste o tamanho da imagem */
-        height: 100%; /* Mant�m a propor��o da imagem */
-        max-width: 10%; /* A imagem n�o exceder� o tamanho do cont�iner */
-      
-    }
+    
 }
     
 
